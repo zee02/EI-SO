@@ -1,0 +1,579 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fnil\fcharset0 HelveticaNeue-Bold;\f4\froman\fcharset0 TimesNewRomanPSMT;\f5\fswiss\fcharset0 Helvetica;
+\f6\fmodern\fcharset0 Courier;\f7\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red255\green255\blue255;
+\red185\green187\blue190;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c99971;\cssrgb\c100000\c100000\c100000;
+\csgenericrgb\c72549\c73333\c74510;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99985;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\margb1417\margt1417\vieww28800\viewh16380\viewkind1\viewscale80
+\deftab709
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b\fs24 \cf0 Escrever no ficheiro\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 Curl >> nome\uc0\u8232 \
+Listar todos os ficheiros num formato longo\
+ls -la\
+\
+Alterar as Permiss\'f5es de um \'fanico ficheiro ou diret\'f3rio:\
+chmod 770 nome_ficheiro\
+\
+Alterar permiss\'f5es de diret\'f3rio e de todo o seu conteudo:\
+chmod 770 -R nome_pasta\
+\
+Ver conteudo de ficheiro:\
+	Less\
+	More\
+	Cat\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+head -n 3 -> Mostra as 3 primeiras linhas \
+head -n -3 -> Remove as 3 ultimas linhas \
+tail -n 3 -> Mostra as 3 ultimas linhas \
+tail -n -3 -> Remove as 3 primeiras linhas
+\f1\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab709\ri0\partightenfactor0
+\cf0 \
+\
+Ver as primeiras n linhas de um ficheiro:\
+head -n nome_ficheiro\
+\
+Ver as ultimas n linhas de um ficheiro:\
+tail -n nome_ficheiro	\
+\
+Encaminhar erros para ficheiro:\
+	comando 2>> nome_ficheiro\
+	comando 2> nome_ficheiro\
+\
+Ler especificamente a 15\'aa linha de um ficheiro:\
+	head -n 15 nome_ficheiro | tail -n1\
+\
+Meta-Caracteres:\
+Procurar de Informa\'e7\'e3o utilizando meta caracteres:\
+* - Qualquer caracter\
+? - Qualquer caracter, mas apenas uma posi\'e7\'e3o\
+[abc] \'96 Definir conjuntos de caracteres\
+\
+Exemplo:\
+\
+a?.txt \'96 procura um ficheiro que tenha dois caracteres e que comece com um a.\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Criar liga\'e7\'f5es entre ficheiros:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 ln nome_ficheiros link nome_liga\'e7\'e3o\
+\
+Hard link (apenas v\'e1lido para ficheiros) \'96 liga\'e7\'e3o for\'e7ada\
+simbolic link (v\'e1lido para ficheiros e pastas): Criar apontador - ln -s nome_ficheiro link-b\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 \
+Lista de todos os processos:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 ps -aux \'96 permite listar as tarefas de todos os utilizadores\
+top\
+htop\
+jobs \'96 tarefas do utilizador em background\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Editores de ficheiros:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 vi\
+nano\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Cancelar tarefas:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 Ctr + c\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Parar tarefas:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 Ctrl+z\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Voltar para tarefa:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 fg tarefa\
+\
+Agrupar ficheiros e pastas num s\'f3 ficheiro:\
+tar (pode n\'e3o comprimir)\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Para Criar ficheiro:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 tar -cf (create file)\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Para extrair ficheiro:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 tar -xf(extract file)\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Ver conteudo:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 tar -tf\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Listar dados em lista longa em formato human readable
+\f1\b0 :\
+ls -lah\
+\
+Saber que utilizador se est\'e1 a utilizar:\
+whoami\
+\
+
+\f0\b Encontrar ficheiro:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 find / -nome_ficheiro - 
+\f0\b procura em todo o sistema
+\f1\b0 \
+find / diret\'f3rio -nome_ficheiro \'96 
+\f0\b procura em diret\'f3rio especifico
+\f1\b0 \
+find / diret\'f3rio -iname nome_ficheiro \'96 
+\f0\b procura case insensitive
+\f1\b0 \
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Encontrar ficheiros que foram alterados \'e0 menos de n horas:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 find /home -ctime -n\
+\
+Mostrar a informa\'e7\'e3o do disco:\
+df\
+df -h -
+\f0\b Mostrar a informa\'e7\'e3o do disco em formato human readable
+\f1\b0 \
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Ver tamanho de uma diretoria\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 du nome_diretoria\
+\
+\
+Encaminhamento de comandos:\
+comando 1 || comando 2\
+\
+ Sequ\'eancia de comandos:\
+comando1 ; comando 2\
+\
+Se comando 1 correr bem executa comando 2:\
+comando 1 && comando 2\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Remover ficheiros:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 rm nome_ficheiro\
+rm -rf nome_diretoria \'96 
+\f0\b remove pastas
+\f1\b0 \
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Alterar nome de ficheiro:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 mv nome1 nome2 \'96 Altera o nome, desde que n\'e3o seja especificada uma localiza\'e7\'e3o diferente\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Copiar ficheiros:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 cp nome de ficheiro localiza\'e7\'e3o_nova_ficheiro\
+cp -rf nome_diretoria \'96 copiar diretorias\
+\
+<!-- Ficha 2-->\
+Mandar sa\'edda de comando 1 para o comando 2\
+$(comando)\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Aplicar filtros:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 grep \'96 filtra linhas e devolve-as\
+cut \'96 filtra colunas e devolve-as\
+tr \'96 trocar caracteres\
+\
+Parametro -v:\
+	Encontra linhas, colunas (dependente do comando) que n\'e3o tenham um determinado texto.\
+Parametro  ^:\
+	Encontra linhas, colunas (dependente do comando) que come\'e7am com um determinado texto.\
+Parametro $:\
+	Encontra linhas, colunas (dependente do comando) que terminem com um determinado texto.\
+\
+Parametro -B n:\
+Encontra linhas, colunas (dependente do comando) que se encontram antes de um determinado texto.\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Encontrar todos os usernames (coluna 1) de um ficheiro:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 cut -d ":" -f1 nome_ficheiro\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Trocar caracteres de um determinado ficheiro:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 cut -d ":" -f1 nome_ficheiro | tr \'93:\'94 \'93-\'94\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Devolver Endere\'e7o IP:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\b0 \cf0 ifconfig | grep "inet " | tr -s " " "#" | cut -f3 -d"#"\
+\
+Ficheiros CSV \'96 Ficheiro com valores separados por um determinado caracter;\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Para obter o nome e o tamanho do maior ficheiro da diretoria:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f2\b0 \cf0 find /bin/* -printf "%sBytes %p\\n" | sort -nr | head -1
+\fs32 		\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\fs24 \cf0 ls -la -S /bin/* | cut -d ' ' -f 8,14 | head -n 1\
+\pard\tx220\tx720\pardeftab709\li720\fi-720\ri0\partightenfactor0
+\ls1\ilvl0\cf0 	\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f3\b \cf0 Numero de ficheiros abertos no SO, localizados numa certa loc:\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f2\b0 \cf0 lsof +D /localizacao/ | wc -I\
+\pard\tx220\tx720\pardeftab709\li720\ri0\partightenfactor0
+\cf0 \
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f3\b \cf0 Mostar a data de arranque do SO, no formato horaMinutosSegundo Per\'edodo do dia:\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f2\b0 \cf0 Date -d \'93$(uptime -s)\'94 \'93+%Hh%Mm%Ss %p\'94
+\fs32 \
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f3\b\fs24 \cf0 \
+\
+\pard\tx220\tx720\tx2937\pardeftab709\ri0\partightenfactor0
+\cf0 Logins por ordem alfabetica com pelo menos 1 processo
+\f4\b0\fs22 \uc0\u8232 
+\f5 ps aux | cut -f1 -d ' ' | sort -u | tr -s '\\n' ' '
+\f3\b\fs24 \
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+\cf0 \
+Linhas impares\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f2\b0 \cf0 \cb4 c\expnd0\expndtw0\kerning0
+at -n /etc/passwd | tr -d ' ' | grep -e '^[13579][^0-9]' -e '^[0-9][13579]'\
+\
+\
+Lista de usernames que utilizam a shell bash, com norma user=UID\
+grep 'bash' /etc/passwd | cut -d':' -f1,3 | tr ':' '='\cb1 \uc0\u8232 
+\fs32 \
+\pard\tx0\tx720\pardeftab720\partightenfactor0
+\ls2\ilvl0\cf0 Criar o ficheiro top3_passwd que deve conter conte\'fado das primeiras 3 linhas do ficheiro etc/passwd:\
+\pard\pardeftab720\partightenfactor0
+\ls2\ilvl0\cf2 \cb4 head -n3 /etc/passwd | base64>top3_passwd.64\cf0 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\fs24 \cf0 \kerning1\expnd0\expndtw0 		\expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs32 \uc0\u8232 \u8232 \u8232 \u8232 \u8232 \u8232 \u8232 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 		
+\f3\b\fs24 \page Pergunta 2 Diurno A\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f2\b0 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f6\fs21 \cf5 #!/usr/bin/env bash\
+\
+set -u\
+\
+data=$(date '+%Y%m%d_%H%M')\
+\
+nome="base64_$data"\
+\
+mkdir $nome\
+\
+ > $nome/file.log\
+ \
+printf "$nome/"\
+\
+for file in *.txt; do\
+\
+	base64 $file > $nome/$file.base64\
+\
+	tamanho=$(cat $nome/$file.base64 | wc -m)\
+\
+	printf "File: $file\\nBase64 length: $tamanho\\n\\n" >> $nome/file.log\
+	\
+	printf "\\n|--- $file.base64"\
+	\
+done\
+\
+printf "\\n|--- file.log"echo #! paragrafo no final\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f3\b\fs24 \cf0 \
+Pergunta 2 Diurno B\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\f2\b0 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f6\fs21 \cf5 #!/usr/bin/env bash\
+\
+\
+\
+for i in \{1..10\}; do \
+\
+	nome="ps_$(hostname)_$(date '+%Y.%m.%d_%s').dat"\
+\
+	ps aux > $nome\
+	\
+	codigo=$(md5sum $nome)\
+	\
+	printf "ps #$i\\n$codigo\\n"\
+	\
+	sleep 1\
+\
+done\
+\
+echo # para \\n\
+\
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+\cf5 ls -l *.dat
+\f2\fs24 \cf0 \
+\pard\tx220\tx720\pardeftab709\ri0\partightenfactor0
+
+\fs32 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 \
+Comando que devolve somente as linhas impares de um ficheiro /etc/password\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f5\b0\fs22 \cf0 cat /etc/passwd | sed -n 'p;n'\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f7\b \cf0 Linha de comando que lista todos os ficheiros regulares executaveis existentes na /usr/bin:\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f6\b0\fs21 \cf2 find /usr/bin -maxdepth 1 -executable -type f\cf1 \
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f7\b\fs22 \cf0 Linha de comando para apresentar o nome do modelo do primeiro CPU que se encontra definido no ficheiro /proc/cpuinfo\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f6\b0\fs21 \cf6 \cb7 grep -m1 'model name' /proc/cpuinfo\cf5 \cb1 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f7\b\fs22 \cf0 Gerar um ficheiro com a hash MD5 (e apenas uma hash) de todos os ficheiros com extens\'e3o ".conf" existentes na diretoria /etc. O ficheiro deve ser guardado na diretoria /tmp com o nome etc_YYYYMMDD_HHMMSS.md5, em que YYYYMMDD_HHMMSS corresponde \'e0 data atual do sistema (p.e. 20190411_200523 corresponde ao dia 11 de abril de 2019, \'e0s 20:05:23). Eventuais mensagens de erro produzidas no canal padr\'e3o de erro devem ser guardadas no ficheiro /etc/conf_errors.txt: \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f6\b0\fs21 \cf4 \cb2 find /etc/*.conf | md5sum > /tmp/etc_$(date '+%Y%m%d_%H%M%S').md5 2> conf_errors.txt
+\f4\fs22 \cf0 \cb1 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Comando que calcula o checksum SHA1 de cada um dos ficheiros do diretorio /etc\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f5\b0\fs22 \cf0 sudo find /etc -type f | xargs sha1sum
+\f1\fs24 \
+\
+Ficha 2 \'97\'97\'97\
+\
+b (Somente a quantidade de espa\'e7o dispon\'edvel no sda2) \'97> df -h -t sda2 \'97output=size\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f0\b \cf0 Lista dos usernames que tem acesso a shell bash\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f5\b0\fs22 \cf7 \cb2 root , o user, e o user2\
+\pard\pardeftab709\li-1080\fi1080\ri0\partightenfactor0
+
+\f1\fs24 \cf7 grep 'bash' /etc/passwd | cut -d':' -f1,3 | tr ':' '='\cf1 \cb1 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f4\fs22 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f7\b \cf0 Numa unica linha de comando, criar 1 diretoria para cada um dos ultimos tres utilizadores do ficheiro /etc/passwd onde o nome da diretoria seja "utilizador_shellQueUtiliza". (O utilizador corresponde \'e0 coluna 1 e a shell que utiliza \'e0 coluna 7).\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f4\b0 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f5 \cf0 Exemplo de output:\
+\
+venancio_bin_bash\
+user_bin_bash\
+postfix_usr_sbin_nologin\
+\
+Resposta:\
+\
+cat /etc/passwd para saber onde cortar\
+tail -n 3 /etc/passwd\
+tail -n 3 /etc/passwd | cut -f1,7 -d:\
+tail -n 3 /etc/passwd | cut -f1,7 -d: | tr ':/' '_'\
+tail -n 3 /etc/passwd | cut -f1,7 -d: | tr ':/' '_' | xargs mkdir
+\f4 \
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f7\b \cf0 Numa unica linha de comando, obeter a mensagem "absolutely no warranty" apresentada no ficheiro /etc/legal \
+exatamente como mostrado de seguida.\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f4\b0 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f5 \cf0 Exemplo Output:\
+\
+absolutely no warranty\
+\
+Resposta:\
+\
+cat /etc/legal\
+tail -3 /etc/legal\
+tail -3 /etc/legal | head -1 \
+tail -3 /etc/legal | head -1 | cut -f4,5,6 -d ' '\
+tail -3 /etc/legal | head -1 | cut -f4,5,6 -d ' ' | tr -d ','\
+tail -3 /etc/legal | head -1 | cut -f4,5,6 -d ' ' | tr -d ',' | tr [:upper:] [:lower:] ou tr "A-Z" "a-z"
+\f4 \
+\
+\
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f7\b \cf0 Numa unica linha de comando, criar um ficheiro apenas com a permissao de leitura para o utilizador, com o nome "ficheirosComPermissoes.txt" que contenha todos os ficheiros da diretoria /etc/ que tenham todas as permissoes e terminem na palavra "alsa".\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f4\b0 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f5 \cf0 Resposta:\
+\
+sudo find /etc/ -perm 777 -iname "*alsa"\
+sudo find /etc/ -perm 777 -iname "*alsa" > ficheiroComPermissoes.txt; chmod 400 ficheiroComPermissoes.txt
+\f4 \
+\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f7\b \cf0 Numa unica linha de comando, obter uma listagem dos primeiros 15 ficheiros da diretoria /etc/ e ps respetivos numeros de linhas. Aten\'e7\'e3o exlcuir o total!\
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f4\b0 \cf0 \
+\pard\pardeftab709\ri0\partightenfactor0
+
+\f5 \cf0 Exemplo de Output:\
+\
+   40 /etc/rpc\
+    4 /etc/netplan/01-network-manager-all.yaml\
+   10 /etc/udev/udev.conf\
+    3 /etc/python3/debian_config\
+    2 /etc/networks\
+   76 /etc/libnl-3/pktloc\
+   45 /etc/libnl-3/classid\
+  417 /etc/services\
+    2 /etc/subuid\
+   61 /etc/apparmor/parser.conf\
+    1 /etc/debian_version\
+   38 /etc/chatscripts/gprs\
+   19 /etc/chatscripts/provider\
+   22 /etc/chatscripts/pap\
+    1 /etc/machine-id\
+\
+Resposta:\
+\
+find /etc/\
+find /etc/ -type f\
+find /etc/ -type f | head -15\
+find /etc/ -type f | head -15 | xargs wc -l\
+find /etc/ -type f | head -15 | xargs wc -l | head -n -1
+\f4 \
+\
+FICHA das fichas 1 e 2:\
+\
+a) \
+ head -n 3 /etc/passwd | base64 > top3_passwd.64\
+b)\
+ df --output=avail -m /dev/sda2 | tail -1 \
+c)\
+ base64 /etc/hosts | grep -io "a" | wc -w\
+e)\
+  date +%A -d 20180615\
+f)\
+ find Documents -ctime -4 > backups.txt\
+g)\
+ ls /etc > $(date +"%Y-%m-%d")\
+h)\
+ sudo cut -d ":" -f 2 /etc/shadow | tail -n 2 | head -n 1\
+i)\
+ head -n 15 /etc/passwd | tail -n 1\
+ sed '15!d' /etc/passwd\
+ awk 'NR==15' /etc/passwd \
+j)\
+ pwd | base64\
+l)\
+ factor 999999999\
+m)\
+ man printf\
+n)\
+ base64 /etc/group > /tmp/group.64\
+o)\
+ ls /usr/include/*.h | wc -l\
+p)\
+ blkid | cut -d "=" -f 2,4 | tr -d "TYPE="}
